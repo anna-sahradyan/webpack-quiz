@@ -4,8 +4,6 @@
     "build": "webpack",
     "clear": "rd /s /q dist",
     "dev": "webpack serve --env develop"
-
-
   },
   "keywords": [],
   "author": "",

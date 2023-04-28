@@ -4,9 +4,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const devServer = (isDev) => !isDev ? {} : {
     devServer: {
-        open: true,
-        hot: true,
-        port: 8080,
+        port:8080,
+        static:{
+            directory:path.resolve(__dirname,"./dist")
+        },
+        devMiddleware:{
+            index:"index.html",
+            watchContentBase: true,
+        }
     }
 };
 
@@ -30,7 +35,13 @@ module.exports = ({develop}) => ({
         rules: [
             {
                 test: /\.(?:ico|png|jpg|jpeg|svg)$/i,
-                type: 'asset/inline'
+                type: 'asset/inline',
+                parser: {
+                    dataUrlCondition: {
+                        maxSize: 3 * 1024//3 kilobytes
+
+                    }
+                }
             },
             {
                 test: /\.html$/i,

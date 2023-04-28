@@ -406,7 +406,7 @@ body {
     position: relative;
     min-width: 100%;
     min-height: 100vh;
-    background-color: #0E1014;
+    background: #E0E0E0;
     font-family: Inter;
     font-size: 16px;
     line-height: 1.3;
@@ -414,4 +414,117 @@ body {
 
 
 }
+
+/*start project*/
+.wrapper {
+    width: 1216px;
+    height: 456px;
+    margin: 100px auto;
+    background-color: #CAFFA0;
+}
+
+.info {
+    width: 608px;
+    border: 1px solid black;
+    height: 450px;
+    padding: 32px;
+
+}
+
+h1 {
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    color: #383838;
+}
+
+.subTitle {
+    padding-top: 16px;
+    width: 400px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #383838;
+    opacity: 0.7;
+
+}
+
+.cost {
+    z-index: 2;
+    width: 100px;
+    height: 35px;
+    top: 5px;
+    left: 119px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #383838;
+    transform: rotate(-6.97deg);
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cost span {
+    text-align: center;
+}
+
+.sec {
+    z-index: 1;
+    width: 100px;
+    height: 35px;
+    top: 35px;
+    left: 160px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #383838;
+    transform: rotate(4.62deg);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #383838;
+}
+
+.sec span {
+    text-align: center;
+}
+
+.search {
+    position: relative;
+    width: 356px;
+    height: 213px;
+    top: 105px;
+    border: 1px solid black;
+
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.shape {
+    position: absolute;
+
+}
+
+.paper {
+    position: absolute;
+    width: 240px;
+    height: 155px;
+    border: 1px solid black;
+    left: 150px;
+    top: 265px;
+    background: linear-gradient(360deg, #FBFFDE 0%, #BFFF93 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+
 
