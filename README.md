@@ -1,2 +1,2 @@
 # webpack-quiz
-https://mellifluous-moonbeam-93afa6.netlify.app
+https://genuine-cannoli-70a8bb.netlify.app
