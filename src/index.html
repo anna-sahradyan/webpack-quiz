@@ -34,15 +34,305 @@
         </div>
     </section>
     <section class="formSection">
-        <form action="">
-            <div class="form-first">
-
+        <form data-multi-step id="myForm">
+            <div class="card" data-step>
+                <div class="personal-details">
+                    <span>Для кого вы ищете учебное заведение? <span class="step1">Шаг 1/9</span></span>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class=" radio ">Себе<input type="radio" name="radio"></div>
+                        <div class=" radio ">Родственнику<input type="radio" name="radio"></div>
+                        <div class=" radio ">Ребенку<input type="radio" name="radio"></div>
+                        <div class=" radio ">Супругу/супруге<input type="radio" name="radio"></div>
+                        <div class=" radio ">Коллеге<input type="radio" name="radio"></div>
+                        <div class=" radio ">Другое<input type="radio" name="radio"></div>
+                    </div>
+                    <button class="btn-first next" data-next>Далее <img src="../src/images/next.svg" alt=""></button>
+                </div>
             </div>
+            <div class="card " data-step>
+                <div class="personal-details">
+                    <span>В каком городе планируете поступать? <span class="step1">Шаг 2/9</span></span>
+                </div>
+                <div class="form-group">
+                    <div class="select-group">
+                        <div class="select-container">
+                            <span class="sel-text">Город</span>
+                            <span class="li-text"></span>
+                            <span class="sel-img"><img src="../src/images/down.svg" alt="arrow"></span>
+                        </div>
+                        <div class="list-container">
+                            <ul class="list-items">
+                                <li class="item">
+                                    <label class="checkbox-label" for="myCheckbox1">
+                                        <input type="checkbox" name="checkBoxName" id="myCheckbox1"
+                                               class="checkboxInput">
+                                        <span class="item-text">Санкт-Петербург</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <label class="checkbox-label" for="myCheckbox2">
+                                        <input type="checkbox" name="checkBoxName" id="myCheckbox2"
+                                               class="checkboxInput">
+                                        <span class="item-text">Москва</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <label class="checkbox-label" for="myCheckbox3">
+                                        <input type="checkbox" name="checkBoxName" id="myCheckbox3"
+                                               class="checkboxInput">
+                                        <span class="item-text">Новосибирск</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <label class="checkbox-label" for="myCheckbox4">
+                                        <input type="checkbox" name="checkBoxName" id="myCheckbox4"
+                                               class="checkboxInput">
+                                        <span class="item-text">Нижний новгород</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <label class="checkbox-label" for="myCheckbox5">
+                                        <input type="checkbox" name="checkBoxName" id="myCheckbox5"
+                                               class="checkboxInput">
+                                        <span class="item-text">Ростов-на-Дону</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn-prev prev" data-previous><img src="../src/images/prev.svg" alt=""> Назад
+                        </button>
+                        <button class="btn-next" data-next>Далее <img src="../src/images/next.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-step>
+                <div class="personal-details">
+                    <span>Какое образование уже есть? <span class="step1">Шаг 3/9</span></span>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+
+                        <div class=" radio ">9 классов<input type="radio" name="radio"></div>
+                        <div class=" radio ">11 классов<input type="radio" name="radio"></div>
+                        <div class=" radio ">Училище<input type="radio" name="radio"></div>
+                        <div class=" radio ">Колледж/техникум<input type="radio" name="radio"></div>
+                        <div class=" radio ">11 классов<input type="radio" name="radio"></div>
+                        <div class=" radio ">Неоконченное высшее<input type="radio" name="radio"></div>
+
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn-prev prev" data-previous><img src="../src/images/prev.svg" alt=""> Назад
+                        </button>
+                        <button class="btn-next" data-next>Далее <img src="../src/images/next.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-step>
+                <div class="personal-details">
+                    <span>Куда планируете поступать? <span class="step1">Шаг 4/9</span></span>
+                </div>
+                <div class="form-group">
+                    <div class="learn-group">
+                        <div class="learn-container">
+                            <span>Вуз <span class=" learn"><input type="radio" name="radio"></span> </span>
+                        </div>
+                        <div class="learn-container">
+                            <span>Колледж/техникум <span class=" learn"><input type="radio" name="radio"></span> </span>
+                        </div>
+                        <div class="learn-container">
+                            <span>Училище<span class=" learn"><input type="radio" name="radio"></span> </span>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn-prev prev" data-previous><img src="../src/images/prev.svg" alt=""> Назад
+                        </button>
+                        <button class="btn-next" data-next>Далее <img src="../src/images/next.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-step>
+                <div class="personal-details">
+                    <span>Какую форму обучения предпочитаете? <span class="step1">Шаг 5/9</span></span>
+                </div>
+                <div class="form-group">
+                    <div class="learn-group">
+                        <div class="learn-container">
+                            <span>Очную <span class=" learn"><input type="radio" name="radio"></span> </span>
+                        </div>
+                        <div class="learn-container">
+                            <span>Заочную <span class=" learn"><input type="radio" name="radio"></span> </span>
+                        </div>
+                        <div class="learn-container">
+                            <span>Дистанционную <span class=" learn"><input type="radio" name="radio"></span> </span>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn-prev prev" data-previous><img src="../src/images/prev.svg" alt=""> Назад
+                        </button>
+                        <button class="btn-next" data-next>Далее <img src="../src/images/next.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-step>
+                <div class="personal-details">
+                    <span>Рассматриваете платное обучение? <span class="step1">Шаг 6/9</span></span>
+                </div>
+                <div class="form-group">
+                    <div class="learn-group">
+                        <div class="learn-container">
+                            <span>Нет, только бюджет <span class=" learn"><input type="radio"
+                                                                                 name="radio"></span> </span>
+                        </div>
+                        <div class="learn-container">
+                            <span>Да, планирую учиться платно <span class=" learn"><input type="radio"
+                                                                                          name="radio"></span> </span>
+                        </div>
+                        <div class="learn-container">
+                            <span>Возможны оба варианта <span class=" learn"><input type="radio"
+                                                                                    name="radio"></span> </span>
+                        </div>
+
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn-prev prev" data-previous><img src="../src/images/prev.svg" alt=""> Назад
+                        </button>
+                        <button class="btn-next" data-next>Далее <img src="../src/images/next.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card " data-step>
+                <div class="personal-details">
+                    <span>Какая специальность интересует? <span class="step1">Шаг 7/9</span></span>
+                </div>
+                <div class="form-group">
+                    <div class="select-group">
+                        <div class="select-container">
+                            <span class="sel-text">Специальность</span>
+                            <span class="li-text"></span>
+                            <span class="sel-img"><img src="../src/images/down.svg" alt="arrow"></span>
+                        </div>
+                        <div class="list-container">
+                            <ul class="list-items">
+                                <li class="item">
+                                    <label class="checkbox-label" for="myCheckbox11">
+                                        <input type="checkbox" name="checkBoxName" id="myCheckbox11"
+                                               class="checkboxInput">
+                                        <span class="item-text">Экономика</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <label class="checkbox-label" for="myCheckbox22">
+                                        <input type="checkbox" name="checkBoxName" id="myCheckbox22"
+                                               class="checkboxInput">
+                                        <span class="item-text"> Философия</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <label class="checkbox-label" for="myCheckbox33">
+                                        <input type="checkbox" name="checkBoxName" id="myCheckbox33"
+                                               class="checkboxInput">
+                                        <span class="item-text">Социология</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <label class="checkbox-label" for="myCheckbox44">
+                                        <input type="checkbox" name="checkBoxName" id="myCheckbox44"
+                                               class="checkboxInput">
+                                        <span class="item-text">Юриспруденция</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <label class="checkbox-label" for="myCheckbox55">
+                                        <input type="checkbox" name="checkBoxName" id="myCheckbox55"
+                                               class="checkboxInput">
+                                        <span class="item-text">Менеджмент</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn-prev prev" data-previous><img src="../src/images/prev.svg" alt=""> Назад
+                        </button>
+                        <button class="btn-next" data-next>Далее <img src="../src/images/next.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-step>
+                <div class="personal-details">
+                    <span>Как скоро планируете поступать? <span class="step1">Шаг 8/9</span></span>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class=" radio ">Как можно быстрее<input type="radio" name="radio"></div>
+                        <div class=" radio ">Квартал<input type="radio" name="radio"></div>
+                        <div class=" radio ">Год<input type="radio" name="radio"></div>
+                        <div class=" radio ">Месяц<input type="radio" name="radio"></div>
+                        <div class=" radio ">Полгода<input type="radio" name="radio"></div>
+
+
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn-prev prev" data-previous><img src="../src/images/prev.svg" alt=""> Назад
+                        </button>
+                        <button class="btn-next" data-next>Далее <img src="../src/images/next.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-step>
+                <div class="personal-details">
+                    <span>Ваша подборка готова! 🥳 Куда нам отправить её? <span class="step1">Шаг 9/9</span></span>
+                </div>
+                <div class="form-group">
+                    <div class="learn-group">
+                        <div class="auth-container">
+                            <span class="auth-btn">Как вас зовут?</span>
+                            <span class="auth-input">
+      <input type="text" class="input-field" placeholder="Введите ваше имя">
+    </span>
+                        </div>
+                        <div class="auth-container">
+                            <span class="auth-btn">Номер телефона</span>
+                            <span class="auth-input">
+      <input type="number" class="input-field" placeholder="Введите номер телефона">
+    </span>
+                        </div>
+                        <div class="auth-container">
+                            <span class="auth-btn">E-mail</span>
+                            <span class="auth-input">
+      <input type="text" class="input-field" placeholder="Введите ваш email">
+    </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-boxSubmit">
+                    <button class="boxSubmit btn-next" data-next>Получить подборку</button>
+                    <p>Нажимая на кнопку, вы даете согласие на обработку своих <b>Персональных данных</b></p>
+                </div>
+            </div>
+            <div class="card" data-step>
+                <div class="lastForm-group">
+                    <div class="last-group">
+                        <div class="ok">
+                            <img src="../src/images/ok.svg" alt="">
+                        </div>
+                        <div class="message">
+                        <div class="title">Отлично, спасибо!</div>
+                        <div class="subTitle">Мы отправили подборку вам на почту.
+                            Если подборка не приходит — проверьте спам, возможно, она попала туда.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </form>
-
     </section>
-
-
 </div>
 
 </body>

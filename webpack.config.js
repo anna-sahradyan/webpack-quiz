@@ -11,7 +11,10 @@ const devServer = (isDev) => !isDev ? {} : {
         devMiddleware:{
             index:"index.html",
             watchContentBase: true,
-        }
+        },
+        headers: {
+            'Content-Type': 'text/css'
+        },
     }
 };
 
